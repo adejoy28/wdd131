@@ -58,7 +58,7 @@ main {
 main section,
 aside {
     display: block;
-    padding: 0 5px;
+    padding: 5px;
 }
 
 main section {
