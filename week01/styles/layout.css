@@ -1,58 +1,83 @@
 body {
-    background: #ffffff;
     margin: 0 auto;
     padding: 0;
-    color: #fff;
-    /* text-align: center; */
-    /* max-width: 1200px; */
+    /* background-color: #d70000; */
+    color: #000;
+    max-width: 1200px;
 }
 
 header {
-    border: 2px solid red;
     background-color: #414141;
     color: #ffffff;
+    /* border: 1px solid white; */
     padding: 0;
+
 }
 
 header h2 {
     color: #ffffff;
-    margin: 0;
+    padding-bottom: 15px;
+    /* border: 1px solid yellow; */
+    margin: 0 0 35px 0;
 }
 
 nav {
-    border: 1px rgb(0, 0, 0) solid;
+    /* border: 1px rgb(0, 0, 0) solid; */
     /* padding: 10px; */
-    border: 1px #fff solid;
+    /* border: 1px #fff solid; */
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: ;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #000;
 
 }
 
 nav a {
-    padding: 15px;
+    margin: 0 auto;
+    padding: 10px 15px;
     margin: 5px;
     color: white;
     text-decoration: none;
+    font-weight: bolder;
+    text-align: center;
+    border-right: 1px solid gray;
+    /* border: blue 1px solid; */
 }
+
+nav a:last-child {
+    border: none;
+}
+
 
 main {
     display: grid;
-    grid-template-columns: auto 1fr;
-    
+    min-height: 70vh;
+    grid-template-columns: 3fr 1fr;
+
 }
-main div {
-    background-color: black;
+
+main section,
+aside {
+    display: block;
+    padding: 0 5px;
 }
+
+main section {
+    background-color: azure;
+}
+
 aside {
     background-color: rgb(84, 84, 84);
+    color: #fff;
 }
 
 footer {
     display: grid;
-
+    background-color: #000;
+    padding: 10px 30px;
+    color: #ffffff;
+    min-height: 10vh;
 }
 
 footer h2 {
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
