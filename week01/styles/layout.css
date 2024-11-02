@@ -22,16 +22,22 @@ header h2 {
 }
 
 nav {
-    /* border: 1px rgb(0, 0, 0) solid; */
-    /* padding: 10px; */
-    /* border: 1px #fff solid; */
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     background-color: #000;
+    display: flex;
+    justify-content: space-around;
 
 }
 
-nav a {
+.nav-item {
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* nav a {
     margin: 0 auto;
     padding: 10px 15px;
     margin: 5px;
@@ -40,8 +46,9 @@ nav a {
     font-weight: bolder;
     text-align: center;
     border-right: 1px solid gray;
-    /* border: blue 1px solid; */
+    /* border: blue 1px solid;
 }
+ */
 
 nav a:last-child {
     border: none;
