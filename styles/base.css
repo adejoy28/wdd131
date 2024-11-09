@@ -1,0 +1,209 @@
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #b7c7f3;
+    --secondary-color: #024059;
+    --accent1-color: #fff;
+    --accent2-color: #bfb115;
+
+    /* change the values below to your chosen font(s) */
+    --heading-font: "IM Fell French Canon";
+    --paragraph-font: Lato, Helvetica, sans-serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #396E94;
+    /* headlines on a white background */
+    --headline-color-on-color: white;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: #396E94;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: #ffffff;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #396E94;
+    --nav-link-color: #ffffff;
+    --nav-background-color: #396E94;
+    --nav-hover-link-color: #bfb115;
+    --nav-hover-background-color: #396E94;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--accent1-color);
+}
+
+p {
+    color: var(--secondary-color);
+}
+
+body {
+    background-color: var(--primary-color);
+    color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: block;
+    background-color: var(--secondary-color);
+    /* padding: 30px; */
+}
+
+.headTitle {
+    /* margin: 30?px 0; */
+    display: flex;
+    padding: 30px 0;
+    place-content: center;
+    /* border: #ffffff solid 2px; */
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--nav-background-color);
+    padding: 20px 0;
+    list-style: none;
+}
+
+.nav-item {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    /* border: 1px solid white; */
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-item a {
+    color: var(--nav-link-color);
+
+}
+
+.nav-item a:hover {
+    color: var(--nav-hover-link-color);
+}
+
+/* Style the main section */
+
+main {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    justify-content: space-evenly;
+    column-gap: 5px;
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 1px solid var(--accent2-color);
+}
+
+.card {
+    border: #D9CCC1 1px solid;
+    border-radius: 30px;
+    margin: 15px 10px;
+    position: relative;
+}
+
+.card:nth-of-type(1) {
+    grid-column: 2fr;
+}
+
+.card:nth-of-type(2) {
+    grid-column: 1fr;
+}
+
+.card h2 {
+    /* text-align: center; */
+    padding: 10px;
+    background-color: var(--secondary-color);
+    display: block;
+}
+
+/* Style first card section */
+
+.intro-box {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    text-align: justify;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+}
+
+
+/* Style first card section */
+
+.state-intro-box {
+    /* padding: 20px; */
+    width: 95%;
+    margin: 0 auto;
+}
+
+.state-intro-box h2 {
+    color: var(--paragraph-color-on-white);
+    border-bottom: 1px solid var(--nav-hover-background-color);
+    padding-bottom: 10px;
+    background-color: var(--accent1-color);
+
+}
+
+.state-intro-content {
+    display: flex;
+    text-align: justify;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.flag-box>p {
+    font-style: italic;
+    font-size: small;
+    text-align: left;
+}
+
+
+/* Style web dev section */
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+    padding-left: 10px;
+    font-size: small;
+}
+
+ul li a:hover,
+ul li a:hover {
+    color: var(--accent2-color);
+}
+
+
+/* Style Footer */
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 20px;
+}
+
+footer p {
+    color: #fff;
+    display: block;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+footer .lstMod {
+    margin-top: 15px;
+    color: var(--accent2-color);
+    font-size: 0.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

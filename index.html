@@ -4,29 +4,110 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - John Adebayo"
-            keywords="dynamic, dynamic website, javascript">
-        <meta name="author" content="John Adebayo">
         <title>WDD 131 - Dynamic Web Fundamentals - John Adebayo</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - John Adebayo; This is my main homepage">
+        <meta name="author" content="John Adebayo">
 
+        <!-- Icon displayer in the tab -->
+        <link rel="shortcut icon" href="images/me.jpeg" type="image/x-icon">
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="styles/base.css">
+
+        <!-- Scripts used -->
+        <script src="scripts/getdates.js" defer></script>
     </head>
 
     <body>
         <header>
-            <h1></h1>
-            <nav class="nav">
-                <a href="www.linkedin.com/in/johnadebayo" class="nav-link">
-                    LinkedIn
-                </a>
-                <a href="https://byui.instructure.com" class="nav-item">I-Learn</a>
-                <a href="https:www.churchofjesuschrist.org/study/scriptures" class="nav-item">Scripture</a>
-                <a href="final-project" class="nav-item">Final Project</a>
+            <div class="headTitle">
+                <h1>WDD 131: Dynamic Web Fundamentals - John A. Adebayo</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/johnadebayo31" target="_blank">
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://byui.instructure.com" target="_blank">I-Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=eng&id=p12#p12"
+                            target="_blank">Scripture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="final-project" target="_blank">Final Project</a>
+                    </li>
+                </ul>
             </nav>
         </header>
         <main>
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="intro-box">
+                    <p class="intro-details">
+                        My name is John Adebayo. I am from Oyo State, Nigeria. I am currently studying Software
+                        Development at BYU-Idaho. I love music and learning. Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Iste fuga tempore enim aperiam non voluptas, deserunt est quis reprehenderit
+                        pariatur velit, ut animi quam adipisci itaque fugiat cum molestiae impedit.
+                    </p>
+                    <div class="profilepic">
+                        <img src="images/me.jpeg" alt="johnadebayo" width="200" loading="lazy">
+                    </div>
+                </div>
+                <div class="state-intro-box">
+                    <h2>Ibadan, Nigeria</h2>
+                    <div class="state-intro-content">
+                        <div class="flag-box">
+                            <img src="images/nigeria-flag.jpg" alt="flag-ibadan">
+                            <p class="flag-name">Official flag of Nigeria</p>
+                        </div>
+                        <p>
+                            Nigeria is a culturally rich country with over 250 ethnic groups having their unique
+                            languages and traditions. Nigeria has abundamt resources, including vast oil reserves and
+                            fertile land. Despite challengesm Nigerians are resilient and resourceful, known for their
+                            warmth, cummunity spirit, and ubreakable pride.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="card web-dev section">
+                <h2>
+                    Web Dev Resources
+                </h2>
 
+                <ul>
+                    <li class="list-item">
+                        <a href="http://#">Dev.to Community</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="http://#">Smashing Community</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="http://#">
+                            CSS Tricks
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="http://#">W3 Schools</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="http://#">Udemy</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="http://#">Lorem Picsum Imsge Placeholder</a>
+                    </li>
+                </ul>
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+            <p>
+                &copy; <span id="Year"> {2024} </span> ❤ John Ayomide Adebayo ❤ Nigeria</span>
+            </p>
+            <p class="lstMod">{Last Modification: <span id="lastModifiedDate"></span>}</p>
+        </footer>
 
 
         <!-- <h1>Landing Page</h1>

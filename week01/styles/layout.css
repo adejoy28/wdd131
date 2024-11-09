@@ -42,7 +42,6 @@ main {
     display: grid;
     min-height: 50vh;
     grid-template-columns: 3fr 1fr;
-
 }
 
 .main-container {
