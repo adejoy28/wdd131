@@ -21,6 +21,9 @@
         margin: 0 auto;
     }
 
+    #menu {
+        display: none;
+    }
 
     nav {
         justify-self: end;
@@ -31,6 +34,7 @@
 
     nav a {
         padding: 2rem 1rem;
+        display: block;
     }
 
     main {
