@@ -1,0 +1,117 @@
+:root {
+    /* Root colors */
+    --primary-color: #672334;
+    --secondary-color: #fff;
+    --tertiary-color: #e9c420;
+    /* Root fonts */
+    --heading-font: "Hanalei Fill", system-ui;
+    --paragraph-font: "DM Sans", sans-serif;
+    --additional-font: "Roboto", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--additional-font);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    margin: 0;
+    /* padding: 0 10px; */
+    color: var(--secondary-color);
+    display: grid;
+    /* justify-content: space-between; */
+    /* gap: 1rem; */
+
+}
+
+header div h1 {
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    /* flex-basis: 100%; */
+    /* padding: 10px; */
+    /* gap: 10px; */
+    /* border: 1px solid white; */
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: block;
+    padding: 20px 1rem;
+    /* background-color: var(--secondary-color); */
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #672334;
+    text-decoration: underline double;
+    font-weight: bold;
+}
+
+
+
+/* Main styles */
+main {
+    max-width: 100%;
+    margin: 2rem auto;
+}
+
+main h2 {
+    text-align: center;
+    padding: 1rem;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin: 2rem auto 1.5rem;
+}
+
+.section {
+    display: grid;
+    grid-column: 1fr;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+}
+
+figure {
+    /* border:#672334 1px solid; */
+}
+
+figure:hover {
+    border: #672334 1px solid;
+    border-radius: 15px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.lstMod {
+    color: var(--tertiary-color);
+    font-size: smaller;
+    padding: 10px 0;
+}
