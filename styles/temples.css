@@ -121,7 +121,7 @@ main h2 {
 figure {
     overflow: hidden;
     /* border:#672334 1px solid; */
-    padding: 0.2rem 0.5rem;
+    margin: 0.2rem 0.5rem;
 }
 
 figure:hover {
