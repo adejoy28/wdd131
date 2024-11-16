@@ -1,7 +1,7 @@
 :root {
     /* Root colors */
     --primary-color: #672334;
-    --secondary-color: #fff;
+    --secondary-color: #f9faea;
     --tertiary-color: #e9c420;
     /* Root fonts */
     --fancy-font: "Hanalei Fill", system-ui;
@@ -17,6 +17,7 @@
 
 body {
     font-family: var(--primary-font);
+    background-color: var(--secondary-color);
 }
 
 img {
@@ -65,7 +66,8 @@ nav a {
     /* background-color: var(--secondary-color); */
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
     background-color: #fff;
     color: #672334;
     text-decoration: underline double;
@@ -118,6 +120,7 @@ main h2 {
 figure {
     overflow: hidden;
     /* border:#672334 1px solid; */
+    padding: 0.2rem 0.5rem;
 }
 
 figure:hover {
