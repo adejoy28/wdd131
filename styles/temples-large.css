@@ -21,6 +21,10 @@
         margin: 0 auto;
     }
 
+    header div div {
+        border-bottom: none;
+    }
+
     #menu {
         display: none;
     }
