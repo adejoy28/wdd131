@@ -4,7 +4,6 @@
     --secondary-color: #f9faea;
     --tertiary-color: #e9c420;
     /* Root fonts */
-    --fancy-font: "Hanalei Fill", system-ui;
     --secondary-font: "DM Sans", sans-serif;
     --primary-font: "Roboto", serif;
 }
@@ -89,6 +88,7 @@ nav a.active {
     color: var(--secondary-color);
     font-size: 2rem;
     border: none;
+    padding: none;
 }
 
 .open a {
