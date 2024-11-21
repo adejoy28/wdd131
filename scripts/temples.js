@@ -20,5 +20,3 @@ const lastModifiedDate = document.getElementById("lastModified");
 // Display the current year in the footer section
 lastModifiedDate.innerHTML = document.lastModified;
 
-
-
