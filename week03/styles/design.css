@@ -14,6 +14,12 @@ footer {
     background-color: #f9f9f9;
     color: #730808;
     text-align: center;
+    font-weight: bold;
+}
+
+.banner::selection {
+    background-color: #730808;
+    color: #ffffff;
 }
 
 h1 {
