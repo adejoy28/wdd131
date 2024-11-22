@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nigeria - John Adebayo</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - John Adebayo; This is my main homepage">
+        <meta name="author" content="John Adebayo">
+
+        <!-- Icon displayer in the tab -->
+        <link rel="shortcut icon" href="images/me.jpeg" type="image/x-icon">
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+
+        <!-- fonts used -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Itim&family=Red+Hat+Display&display=swap" rel="stylesheet">
+
+        <!-- Scripts used -->
+        <script src="scripts/place.js" defer async></script>
+    </head>
+
+    <body>
+        <h1>Nigeria</h1>
+        <main>
+            <picture>
+                <source media="(min-width: 900px)" srcset="images/nigeria-large.webp">
+                <source media="(min-width: 500px)" srcset="images/nigeria-medium.webp">
+                <img src="images/nigeria-small.webp" alt="Zuma Rock Nigeria" width="100vw" height="auto">
+            </picture>
+            <section>
+                <h2>Data</h2>
+                <li><b>Area:</b> 587,041sqkm</li>
+                <li><b>Population:</b> 27,691,081</li>
+                <li><b>Capital:</b> Abuja</li>
+                <li><b>Languages:</b> English, Yoruba, Hausa, Igbo etc.</li>
+                <li><b>Currency:</b> Naire</li>
+                <li><b>Area:</b> UTC+1</li>
+                <li><b>Area:</b> +234</li>
+            </section>
+
+            <section>
+                <h2>Weather</h2>
+                <li><b>Temparature:</b> 10<sup>o</sup>C</li>
+                <li><b>Conditions:</b> Partly Cloudy</li>
+                <li><b>Wind:</b> 5 km/h</li>
+                <li><b>Wind Chill:</b> 9.8 <sup>o</sup>C</li>
+            </section>
+        </main>
+
+
+        <footer>
+            <p>
+                &copy; <span id="Year"></span> ❤ John Ayomide Adebayo ❤ Nigeria
+            </p>
+            <p class="lstMod">{Last Modification: <span id="lastModified"></span>}</p>
+        </footer>
+    </body>
+
+</html>
