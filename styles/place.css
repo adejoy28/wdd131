@@ -1,5 +1,13 @@
 :root {
     font-size: 16px;
+    --primary-color: green;
+    --secondary-color: white;
+    --tertiary-color: black;
+    --additional-color: orange;
+
+    --secondary-font: "DM Sans", sans-serif;
+    --primary-font: "Roboto", serif;
+
 }
 
 * {
@@ -9,9 +17,12 @@
 }
 
 body {
-    background-color: green;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: var(--primary-font);
 }
 
 img {
@@ -24,7 +35,6 @@ h1 {
     text-align: center;
     display: block;
     width: 100%;
-    /* border: 1px solisd red; */
     font-size: 1rem;
     padding: 0.6rem 0;
 }
@@ -37,16 +47,15 @@ main {
 
 
 section {
-    background-color: white;
+    background-color: var(--secondary-color);
     color: black;
     padding: 2rem;
-    width: 100%;
-    border-bottom: #efefef solid 1px;
+    width: fit-content;
+    border-bottom: var(--secondary-color) solid 1px;
 }
 
 section h2 {
     font-size: 1.0rem;
-
 }
 
 section img {
@@ -84,5 +93,9 @@ footer {
     padding: 10px;
     text-align: center;
     border-top: 1px dotted #ddd;
-    font-size: 0.5rem;
+    /* font-size: 0.5rem; */
+}
+
+.lstMod {
+    color: orange;
 }
