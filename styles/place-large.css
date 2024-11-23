@@ -1,8 +1,12 @@
-@media screen and (min-width:500px) {
-    body h1 {
-        font-size: 1.4rem;
-        padding: .8rem 0;
+@media screen and (min-width:650px) {
+    body {
+        font-size: 1.3rem;
+    }
+    
+    header h1 {
+        padding: 1.8rem 0;
         display: block;
+        font-size: 2rem;
     }
 
     main {
@@ -34,7 +38,7 @@
         justify-content: space-between;
         align-items: center;
         margin: 0 0 0 -50px;
-        font-size: 1.3rem;
+        font-size: 1.8rem;
 
     }
 
