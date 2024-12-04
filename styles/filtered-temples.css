@@ -110,12 +110,39 @@ main h2 {
     margin: 2rem auto 1.5rem;
 }
 
-.section {
+.sections {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     align-content: center;
     gap: 2rem;
+}
+
+section {
+    /* padding: 1.5rem 5px; */
+    margin: 0 5px;
+    /* width: 100%; */
+    border: 1px solid rgba(107, 107, 107, 0.61);
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px #a0aec0;
+    overflow: hidden;
+    color: #a0aec0;
+
+}
+
+section div {
+    padding: 1rem 1.2rem;
+    font-family: "Poppins";
+    font-size: .6rem;
+}
+
+section h3 {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+.label {
+    /* font-size: .rem; */
 }
 
 figure {
