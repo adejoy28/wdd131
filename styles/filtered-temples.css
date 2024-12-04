@@ -5,7 +5,7 @@
     --tertiary-color: #e9c420;
     /* Root fonts */
     --secondary-font: "DM Sans", sans-serif;
-    --primary-font: "Roboto", serif;
+    --primary-font: "Poppins", serif;
 }
 
 * {
@@ -86,9 +86,9 @@ nav a.active {
 #menu {
     background-color: rgba(34, 42, 32, 0);
     color: var(--secondary-color);
-    font-size: 2rem;
+    font-size: 1.2rem;
     border: none;
-    padding: none;
+    padding: 0;
 }
 
 .open a {
@@ -126,14 +126,14 @@ section {
     border-radius: 5px;
     box-shadow: 5px 5px 8px #a0aec0;
     overflow: hidden;
-    color: #a0aec0;
+    color: #616365;
 
 }
 
 section div {
     padding: 1rem 1.2rem;
     font-family: "Poppins";
-    font-size: .6rem;
+    font-size: .8rem;
 }
 
 section h3 {
@@ -143,6 +143,7 @@ section h3 {
 
 .label {
     /* font-size: .rem; */
+    color: black;
 }
 
 figure {
