@@ -21,7 +21,25 @@ const aCourse = {
     ],
 };
 
+function setNameAndNumberOfCourse(course) {
+    // alert(course.sections.sectionNum);
+    const courseName = document.querySelector("#courseName");
+    const courseCode = document.querySelector("#courseCode");
 
+    courseName.textContent = course.name;
+    courseCode.textContent = course.code;
+}
+
+
+function sectionTemplate(section) {
+    return `<tr>
+                <td>${section.sectionNum}</td>
+                <td>${section.roomNum}</td>
+                <td>${section.enrolled}</td>
+                <td>${section.days}</td>
+                <td>${section.instructor}</td>
+            </tr>`;
+}
 // let enrolledStudent = aCourse{};
 
 console.log(this.sections);

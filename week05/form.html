@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Review Form</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - John Adebayo; This is my main homepage">
+        <meta name="author" content="John Adebayo">
+
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/form-large.css">
+
+        <!-- Fonts links goes here -->
+
+        <script src="scripts/form.js" defer></script>
+        <script src="../scripts/getdates.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <main>
+            <form action="review.html" method="get" class="pr-form">
+                <label for="">Product Name:
+                    <select name="product" id="product-name" required>
+                        <option value="" disabled selected>Choose a Product</option>
+                    </select>
+                </label>
+                <div>Overall Rating</div>
+                <div class="radio-container">
+                    <label for="rating"><input type="radio" name="rating" id="rating" value="1" required>
+                        <span class="star">☆</span></label>
+                    <label for=""><input type="radio" name="rating" id="rating" value="2" required>
+                        <span class="star">☆☆</span></label>
+                    <label for=""><input type="radio" name="rating" id="rating" value="3" required>
+                        <span class="star">☆☆☆</span></label>
+                    <label for=""><input type="radio" name="rating" id="rating" value="4" required>
+                        <span class="star">☆☆☆☆</span></label>
+                    <label for=""><input type="radio" name="rating" id="rating" value="5" required>
+                        <span class="star">☆☆☆☆☆</span></label>
+                </div>
+                <label for="">Date of Installation
+                    <input type="date" name="date" id="date-of-installation" required>
+                </label>
+                <div>Which feature did you find useful in the product?<br><span>Check all that apply?</span>
+                </div>
+                <div class="checkbox">
+                    <label for=""><input type="checkbox" name="durability" id="useful-feature" value="yes">
+                        Durability</label>
+                    <label for=""><input type="checkbox" name="ease-of-use" id="useful-feature" value="yes"> Ease of
+                        Use</label>
+                    <label for=""><input type="checkbox" name="performance" id="useful-feature" value="yes">
+                        Performance</label>
+                    <label for=""><input type="checkbox" name="design" id="useful-feature" value="yes"> Design</label>
+                </div>
+
+                <label for="text-review">Written Review <span>(Optional)</span>
+                    <textarea name="review" id="text-review" rows="5"></textarea></label>
+
+                <label for="">Your Name <span>(Optional)</span>
+                    <input type="text" name="username" id="username">
+                </label>
+
+                <input type="submit" value="Post Review">
+            </form>
+        </main>
+        <footer>
+            <p>&copy; <span id="Year"></span> 🎓John Ayomide Adebayo🎓 Nigeria</p>
+            <p class="lstMod">{Last Modification: <span id="lastModified"></span>}</p>
+        </footer>
+    </body>
+
+
+</html>
