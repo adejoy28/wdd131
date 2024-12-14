@@ -55,6 +55,14 @@ radios.forEach(radio => {
 });
 
 
+let countReview = 0;
+let submitButton = document.querySelector("#submit");
+
+function countReviewOnSubmit() {
+    countReview +=1;
+    localStorage.setItem("count", countReview);
+
+}
 // star.forEach(s => {
 //     s.innerHTML = "star";
 // });
