@@ -12,7 +12,10 @@
         <link rel="shortcut icon" href="images/me.jpeg" type="image/x-icon">
 
         <!-- Stylesheet -->
-        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/styles-medium.css">
+        <link rel="stylesheet" href="styles/styles-larger.css">
+
 
         <!-- fonts used -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +23,146 @@
         <link href="https://fonts.googleapis.com/css2?family=Itim&family=Red+Hat+Display&display=swap" rel="stylesheet">
 
         <!-- Scripts used -->
-        <script src="scripts/getdates.js" defer async></script>
+        <script src="../scripts/getdates.js" defer async></script>
+        <script src="scripts/scripts.js" defer async></script>
+        <script src="scripts/list.js" defer async></script>
     </head>
 
     <body>
+        <header>
+            <div>
+                <img src="images/brand-logo.png" alt="Brand brand-logo" class="brand-logo">
+                <button id="hambugger-menu"></button>
+            </div>
+            <nav>
+                <a href="#menu-section">Menu &#9660;</a>
+                <ul>
+                    <li><a href="national">National</a></li>
+                    <li><a href="intercontinental">Intercontinental</a></li>
+                    <li><a href="Drinks">Drinks</a></li>
+                </ul>
+                <a href="about">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hero-s">
+                <!-- <img src="" alt="Image"> -->
+                <div>
+                    <p>Eat-Out Resturant</p>
+                    <a href="#menu"><button class="hero-menu-btn">Show me the menu</button></a>
+                </div>
+            </section>
+            <section class="menu-section" id="menu">
+                <div class="menu-title">
+                    <h1>Menu</h1>
+                    <span>Exclusive Dishes - Exotic Drinks</span>
+                </div>
+                <div class="menu-container">
+                    <div class="row">
+                        <a href="javascript:void(0)" id="myLink" onclick="openMenu(event, 'National')">
+                            <div class="tablink">National</div>
+                        </a>
+                        <a href="javascript:void(0)" id="myLink" onclick="openMenu(event, 'Intercontinental')">
+                            <div class="tablink">Intercontinental</div>
+                        </a>
+                        <a href="javascript:void(0)" id="myLink" onclick="openMenu(event, 'Drinks')">
+                            <div class="tablink">Drinks</div>
+                        </a>
+                        <!-- <a href="#">Intercontinental</a>
+                        <a href="#">Drinks</a> -->
+                    </div>
+                    <div class="menu" id="National">
+                        <h1><b>Magarita</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+
+                        <h1><b>Magarita</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+
+                        <h1><b>Magarita</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+
+                        <h1><b>Magarita</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+
+                        <h1><b>Magarita</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+
+                        <h1><b>Magarita</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+                    </div>
+                    <div class="menu" id="Intercontinental">
+                        <h1><b>Pasta</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+
+                        <h1><b>Pasta</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+
+                        <h1><b>Pasta</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+
+                        <h1><b>Pasta</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+
+                        <h1><b>Pasta</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+
+                        <h1><b>Pasta</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+                    </div>
+                    <div class="menu" id="Drinks">
+                        <h1><b>Rose</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+
+                        <h1><b>Rose</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+
+                        <h1><b>Rose</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+
+                        <h1><b>Rose</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+
+                        <h1><b>Rose</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+
+                        <h1><b>Rose</b> <span class="price">$12.00</span></h1>
+                        <p>Fresh tomatoes, fresh mozzarrella, fresh basil</p>
+                        <hr>
+                    </div>
+                </div>
+
+                </div>
+
+            </section>
+            <section id="about">
+                This is About section
+            </section>
+            <div>
+                <p>Enjoy an Array of Tasting Experience</p>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; <span id="Year"></span> 🎓John Ayomide Adebayo🎓 Nigeria</p>
+            <p class="lstMod">{Last Modification: <span id="lastModified"></span>}</p>
+        </footer>
     </body>
 
 </html>

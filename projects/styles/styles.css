@@ -1,0 +1,238 @@
+:root {
+    --primary-color: #024ea4;
+    --secondary-color: #5b5941;
+    --accent-color-1: #eb3644;
+    --accent-color-2: #000000;
+    --accent-color-3: #ffffff;
+    /* --accent-color-1: #eb3644; */
+
+    /* Root fonts */
+    --secondary-font: "DM Sans", sans-serif;
+    --primary-font: "Roboto", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    /* background-color: var(--primary-color); */
+    color: var(--accent-color-3);
+    /* display: flex; */
+    width: 100%;
+    padding: 0 1rem;
+    max-height: 10vh;
+    height: 100%;
+    overflow: hidden;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+header img {
+    width: 60px;
+    height: auto;
+}
+
+/* Hambugger Styles */
+#hambugger-menu::before {
+    content: "☰";
+}
+
+#hambugger-menu .open::before {
+    content: "✖";
+}
+
+#hambugger-menu {
+    /* background-color: var(--primary-color); */
+    background-color: var(--accent-color-3);
+    /* color: var(--accent-color-3); */
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: none;
+    padding: none;
+}
+
+.open a {
+    display: block;
+}
+
+/* Navigation menu */
+nav {
+    display: block;
+}
+
+nav a {
+    padding: 1.4rem 1rem;
+    text-decoration: none;
+    display: none;
+    color: var(--accent-color-3);
+}
+
+nav a:first-of-type::after {
+    /* content: "&#9660";  */
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+}
+
+nav ul li {
+    color: var(--accent-color-3);
+
+}
+
+
+main {
+    min-height: 80vh;
+    height: 100%;
+    /* width: 100%; */
+    border: none
+        /* 1px solid red; */
+}
+
+/* Hero Section */
+
+.hero-s {
+    /* border: #000000 1px solid; */
+    background-color: var(--secondary-color);
+    min-height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-s div {
+    /* width: 200px; */
+    /* margin: 0 auto; */
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    font-size: 3em;
+    text-align: center;
+}
+
+.hero-s div p {
+    color: var(--accent-color-3);
+}
+
+.hero-s div button {
+    border: none;
+    background-image: url(images/hero-img.jpg);
+    background-color: #eb3644;
+    color: var(--accent-color-3);
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.menu-section {
+    padding: 20px auto;
+    /* background-color: #eb3644; */
+}
+
+.menu-title {
+    text-align: center;
+    padding: 2rem 0 1.5rem;
+}
+
+.menu-title>h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+    color: var(--primary-color);
+}
+
+.menu-title>span {
+    text-decoration: none;
+    font-style: italic;
+    color: var(--accent-color-1);
+    /* margin-bottom: 1rem; */
+}
+
+div.menu-container {
+    /* padding: 30px 10px; */
+}
+
+.row {
+    border: #5b59413b solid .51px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: .5rem 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.row #myLink {
+    text-decoration: none;
+}
+
+.row #myLink .tablink {
+    display: inline-block;
+    padding: .6rem 1rem;
+    color: var(--accent-color-2);
+    /* border: 1px green solid; */
+}
+
+.tb-red {
+    background-color: var(--accent-color-1);
+    color: var(--accent-color-3) !important;
+}
+
+
+.menu-container .menu {
+    padding: .6rem 0;
+    color: var(--secondary-color);
+    border: #5b59413b solid .51px;
+    border-bottom: none;
+}
+
+.menu-container .menu h1 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: .2rem;
+    font-size: large;
+    padding: .2rem .5rem;
+}
+
+.menu-container .menu h1 span {
+    font-weight: 500;
+}
+hr {
+    margin: 5px 0;
+}
+.menu-container .menu p {
+    font-weight: 100;
+    font-size: .8rem;
+    color: var(--accent-color-1);
+    padding-left: .5rem;
+}
+
+footer {
+    max-width: 100%;
+    background-color: var(--primary-color);
+    color: var(--accent-color-3);
+    padding: 2rem 0;
+}
+
+footer p {
+    margin: 1rem auto;
+    width: auto;
+    text-align: center;
+}
