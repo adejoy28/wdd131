@@ -46,23 +46,14 @@ radios.forEach(radio => {
     radio.addEventListener("click", () => {
         // alert(1);
         // if (input[type="radio"].att = true) {
-            star.classList.add("star-selected");
+        star.classList.add("star-selected");
         // } else {
         //     star.classList.remove("star-selected");
         // }
-        
+
     });
 });
 
-
-let countReview = 0;
-let submitButton = document.querySelector("#submit");
-
-function countReviewOnSubmit() {
-    countReview +=1;
-    localStorage.setItem("count", countReview);
-
-}
 // star.forEach(s => {
 //     s.innerHTML = "star";
 // });
